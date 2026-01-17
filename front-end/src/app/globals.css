@@ -1,0 +1,119 @@
+/* ==========================
+   Reset básico
+   ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo e fonte padrão */
+body {
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+/* ==========================
+   Tema refinado do Flatpickr
+   ========================== */
+
+/* Remove o input de data */
+.flatpickr-input {
+  display: none !important;
+}
+
+/* Wrapper geral do calendário */
+body .flatpickr-wrapper,
+body .flatpickr-calendar.inline {
+  background-color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 50px !important; /* ✅ super redondo */
+  overflow: hidden !important;
+}
+
+/* Container principal do calendário */
+body .flatpickr-calendar {
+  border-radius: 50px !important; /* ✅ bordas bem suaves */
+  background-color: #ffffff !important;
+  border: none !important; /* ❌ remove borda */
+  box-shadow: none !important; /* ❌ remove sombra */
+  font-family: inherit !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  padding: 10px !important;
+}
+
+/* Remove o cabeçalho do mês */
+body .flatpickr-months {
+  display: none !important;
+}
+
+/* ==========================
+   Estilo dos dias
+   ========================== */
+body .flatpickr-day {
+  border-radius: 10px !important;
+  height: 38px !important;
+  width: 38px !important;
+  font-size: 14px !important;
+  color: #1a1a1a !important;
+  transition: all 0.2s ease;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Dia atual */
+body .flatpickr-day.today {
+  border-color: #14532d !important;
+  color: #14532d !important;
+  font-weight: 600 !important;
+}
+
+/* ✅ Dia selecionado (verde do dashboard) */
+body .flatpickr-day.selected,
+body .flatpickr-day.selected:focus,
+body .flatpickr-day.selected:hover {
+  background: #00b37e !important; /* 💚 verde principal */
+  border-color: #00b37e !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Hover */
+body .flatpickr-day:hover {
+  background: rgba(0, 179, 126, 0.15) !important;
+  transform: translateY(-1px);
+  color: #00b37e !important;
+  border: none !important;
+}
+
+/* ==========================
+   Cabeçalho da semana
+   ========================== */
+body .flatpickr-weekdays {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #4f4f4f !important;
+  margin-bottom: 4px !important;
+}
+
+/* Remove margens extras */
+body .flatpickr-innerContainer {
+  margin-top: -8px !important;
+}
+
+/* ==========================
+   Responsivo
+   ========================== */
+@media (max-width: 768px) {
+  body .flatpickr-calendar {
+    border-radius: 40px !important; /* mantém suavidade no mobile */
+  }
+
+  body .flatpickr-day {
+    height: 34px !important;
+    width: 34px !important;
+  }
+}

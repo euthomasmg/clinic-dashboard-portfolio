@@ -1,22 +1,71 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Virtual environments
+.venv/
+env/
+venv/
+/node_modules
+/front-end/node_modules/
+package-lock.json
+package.json
+
+# Node / Yarn / PNPM
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Env files (credentials, secrets)
+.env
+*.env
+*.env.local
+/front-end/.env*
+
+# IDE / Editor
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
+.next/
+out/
+
+# Testing
+coverage/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+.DS_Store
+*.pem
+
+# Uploads
+/back-end/uploads/
+/back-end/node_modules
+/back-end/credentials/
+*.apps.googleusercontent.com.json
+*.apps.googleusercontent.com_2.json
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Database dumps
+*.sqlite3
+*.db
