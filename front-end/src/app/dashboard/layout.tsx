@@ -217,7 +217,7 @@ export default function DashboardLayout({
             letterSpacing: "-0.5px",
           }}
         >
-          Clinica Compassivamente
+          Nome da empresa
         </Typography>
 
         {/* Secoes de menu */}

@@ -16,8 +16,6 @@ import {
   FormControl,
   Fade,
 } from "@mui/material";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -205,15 +203,15 @@ export default function RegisterPage() {
           height: 120,
           borderRadius: "50%",
           overflow: "hidden",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          bgcolor: "background.paper",
         }}
       >
-        <Image
-          src={logo}
-          alt="Logo da Clínica"
-          width={120}
-          height={120}
-          style={{ objectFit: "cover" }}
-        />
+        <Typography variant="subtitle1" fontWeight={700} color="text.secondary">
+          Logo
+        </Typography>
       </Box>
 
       {/* Caixa principal */}

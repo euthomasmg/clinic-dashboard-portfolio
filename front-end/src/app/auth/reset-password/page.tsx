@@ -10,8 +10,6 @@ import {
   Typography,
   CircularProgress,
 } from "@mui/material";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
 import { useRouter } from "next/navigation";
 
 export default function ResetPasswordPage() {
@@ -84,15 +82,15 @@ export default function ResetPasswordPage() {
           height: 120,
           borderRadius: "50%",
           overflow: "hidden",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          bgcolor: "background.paper",
         }}
       >
-        <Image
-          src={logo}
-          alt="Logo da Clínica"
-          width={120}
-          height={120}
-          style={{ objectFit: "cover" }}
-        />
+        <Typography variant="subtitle1" fontWeight={700} color="text.secondary">
+          Logo
+        </Typography>
       </Box>
 
       {/* Caixa principal */}

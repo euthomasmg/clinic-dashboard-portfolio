@@ -11,8 +11,6 @@ import {
   Paper,
   Link,
 } from "@mui/material";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://127.0.0.1:8000";
 
@@ -83,15 +81,15 @@ export default function LoginPage() {
           borderRadius: "50%",
           overflow: "hidden",
           boxShadow: 3,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          bgcolor: "background.paper",
         }}
       >
-        <Image
-          src={logo}
-          alt="Logo da Clinica"
-          width={120}
-          height={120}
-          style={{ objectFit: "cover" }}
-        />
+        <Typography variant="subtitle1" fontWeight={700} color="text.secondary">
+          Logo
+        </Typography>
       </Box>
 
       {/* Card de login */}
