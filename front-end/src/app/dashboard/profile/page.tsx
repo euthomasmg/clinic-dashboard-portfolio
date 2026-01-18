@@ -1012,7 +1012,7 @@ export default function ProfilePage() {
           sx={{
             width: 72,
             height: 72,
-            bgcolor: theme.palette.primary.main,
+            bgcolor: theme.palette.success.main,
             color: "#fff",
             fontWeight: 700,
           }}

@@ -86,7 +86,7 @@ export default function FinancePage() {
       title: "Receitas",
       value: totals.incomeTotal,
       icon: <TrendingUpRounded />,
-      color: "#14532d",
+      color: "#0b2d5c",
     },
     {
       title: "Despesas",
@@ -98,7 +98,7 @@ export default function FinancePage() {
       title: "Lucro/Saldo",
       value: totals.profit,
       icon: <AttachMoneyRounded />,
-      color: totals.profit >= 0 ? "#0f766e" : "#b42318",
+      color: totals.profit >= 0 ? "#2563eb" : "#b42318",
     },
   ];
 
@@ -260,7 +260,7 @@ export default function FinancePage() {
                     color={item.type === "income" ? "success" : "error"}
                   />
                 </TableCell>
-                <TableCell align="right" style={{ color: item.type === "income" ? "#0f766e" : "#b42318", fontWeight: 700 }}>
+                <TableCell align="right" style={{ color: item.type === "income" ? "#2563eb" : "#b42318", fontWeight: 700 }}>
                   {item.amount.toFixed(2)}
                 </TableCell>
                 <TableCell align="center">

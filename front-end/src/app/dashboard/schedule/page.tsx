@@ -506,8 +506,8 @@ export default function SchedulePage() {
 
         .flatpickr-day.selected,
         .flatpickr-day.selected:hover {
-          background: #00b37e !important;
-          border-color: #00b37e !important;
+          background: #2563eb !important;
+          border-color: #2563eb !important;
           color: #fff !important;
         }
       `}</style>

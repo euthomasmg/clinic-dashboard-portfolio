@@ -5,10 +5,16 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#14532d", // verde escuro
+      main: "#0b2d5c", // azul escuro
     },
     secondary: {
       main: "#e6c767", // dourado ainda disponível p/ botões/links
+    },
+    success: {
+      main: "#1c4aa3",
+      dark: "#0b2d5c",
+      light: "#60a5fa",
+      contrastText: "#ffffff",
     },
     background: {
       default: "transparent",
@@ -29,7 +35,7 @@ const theme = createTheme({
           padding: 0,
           minHeight: "100vh",
           background:
-            "linear-gradient(135deg, #1b4332, #95d5b2)", 
+            "linear-gradient(135deg, #0b2d5c, #2563eb)",
           // verde escuro → verde claro suave
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",

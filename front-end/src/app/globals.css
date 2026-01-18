@@ -66,8 +66,8 @@ body .flatpickr-day {
 
 /* Dia atual */
 body .flatpickr-day.today {
-  border-color: #14532d !important;
-  color: #14532d !important;
+  border-color: #0b2d5c !important;
+  color: #0b2d5c !important;
   font-weight: 600 !important;
 }
 
@@ -75,17 +75,17 @@ body .flatpickr-day.today {
 body .flatpickr-day.selected,
 body .flatpickr-day.selected:focus,
 body .flatpickr-day.selected:hover {
-  background: #00b37e !important; /* 💚 verde principal */
-  border-color: #00b37e !important;
+  background: #2563eb !important; /* azul principal */
+  border-color: #2563eb !important;
   color: #ffffff !important;
   box-shadow: none !important;
 }
 
 /* Hover */
 body .flatpickr-day:hover {
-  background: rgba(0, 179, 126, 0.15) !important;
+  background: rgba(37, 99, 235, 0.15) !important;
   transform: translateY(-1px);
-  color: #00b37e !important;
+  color: #2563eb !important;
   border: none !important;
 }
 

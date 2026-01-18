@@ -376,7 +376,7 @@ export default function DashboardLayout({
             </Box>
             <Avatar
               sx={{
-                bgcolor: theme.palette.primary.main,
+                bgcolor: theme.palette.success.main,
                 color: "#fff",
                 width: 40,
                 height: 40,
